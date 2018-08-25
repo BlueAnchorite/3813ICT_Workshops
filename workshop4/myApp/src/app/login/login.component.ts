@@ -28,6 +28,9 @@ export class LoginComponent implements OnInit {
     
     if(this.username == this.storedUsername && this.password == this.storedPassword)
     {
+      var user = {userid: "1", username: this.username, birth: "1990", age: "28"};
+      localStorage.setItem("user", JSON.stringify(user));
+      console.log(user);
       this.router.navigate(['/account']);
     }
     else
