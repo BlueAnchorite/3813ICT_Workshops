@@ -1,4 +1,15 @@
+<h1>This is a second page</h1>
+
 <p>
   account works!
   <a routerLink="/login">Login</a>
 </p>
+
+<div>
+Userid = {{ userid  }} <br>
+Username = {{ username  }} <br>
+Birth = {{ birth  }} <br>
+Age = {{ age  }} <br>
+</div> 
+
+<button (click)="logout($event)">Logout</button>
